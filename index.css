@@ -1,0 +1,133 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-color:whitesmoke;
+}
+#main{
+    background-color: white;
+    margin: 0px 20px;
+}
+#heading{
+    font-family:"Lobster";
+    font-size: xx-large;
+    text-align: center;
+}
+ul{
+    background-color: black;
+}
+ul>li{
+    padding:10px;
+    list-style: none;   
+}
+li>a{
+color: white;
+text-decoration: none;
+margin-left: 10px;
+}
+#left_content,#rightrow1,#rightrow2{
+    margin:10px;  
+    border: 2px solid black;
+    padding:20px;
+}
+#left_content>h2,#rightrow1>h2,#rightrow2>h2{
+   font-size:xx-large;
+}
+#left_content>p,#rightrow1>p,#rightrow2>p{
+    font-size: large;
+}
+@media only screen and (min-width: 641px){
+    #main{
+        background-color: white;
+        margin: 0px 20px;
+        display: grid;
+        grid-template-areas: "head head" "nav nav" "content1 content2";
+        grid-template-rows: 2% 8% 93%;
+        grid-template-columns: 30% 69.3%;
+        grid-gap:10px;
+    }
+    #heading{
+        font-family:"Lobster";
+        font-size: xx-large;
+        text-align: center;
+        grid-area: head;
+    }
+    #navigation{
+        grid-area:nav;
+    }
+    ul{
+        background-color: black;
+        padding-left: 20%;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      
+    }
+    ul>li{
+        
+        display: inline;
+        padding:10px;
+        list-style: none; 
+    }
+    li>a{
+        color: white;
+        text-decoration: none;
+        margin-left: 10px;
+        
+        }
+    #left_content{
+      grid-area:content1;
+ 
+    }
+    #right_content{
+        grid-area:content2;
+     
+    }
+    @media only screen and (min-width: 841px){
+    #main{
+        background-color: white;
+        margin: 0px 20px;
+        display: grid;
+        grid-template-areas: "head head" "nav nav" "content1 content2";
+        grid-template-rows: 2% 10% 93%;
+        grid-template-columns: 35% 64.3%;
+        grid-gap:10px;
+    }
+    #heading{
+        font-family:"Lobster";
+        font-size: xx-large;
+        text-align: center;
+        grid-area: head;
+    }
+    #navigation{
+        grid-area:nav;
+    }
+    ul{
+        background-color: black;
+        padding-left: 30%;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      
+    }
+    ul>li{
+        
+        display: inline;
+        padding:10px;
+        list-style: none; 
+    }
+    li>a{
+        color: white;
+        text-decoration: none;
+        margin-left: 10px;
+        
+        }
+    #left_content{
+      grid-area:content1;
+      height:600px;
+   
+    }
+    #right_content{
+        grid-area:content2;
+    }    
+}
+
